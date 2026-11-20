@@ -1237,15 +1237,15 @@
       return (
         <div className="bg-cream-dark/80 border-b border-border backdrop-blur-md sticky top-[68px] z-30 shadow-xs">
           <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-            <div className="flex items-center justify-between overflow-x-auto scrollbar-none py-2 gap-4 text-[11px] font-body uppercase tracking-wider text-charcoal/80">
-              <div className="flex items-center gap-2 sm:gap-4 whitespace-nowrap">
+            <div className="flex items-center justify-center overflow-x-auto scrollbar-none py-2.5 text-[11px] font-body uppercase tracking-wider text-charcoal/80">
+              <div className="flex items-center justify-center gap-2 sm:gap-4 whitespace-nowrap mx-auto">
                 {categories.map(c => {
                   const isActive = currentPage === 'products' && currentCategory === c.id;
                   return (
                     <button
                       key={c.id}
                       onClick={() => onSelectCategory(c.id)}
-                      className={`px-3 py-1.5 transition-all flex items-center gap-1.5 font-medium border ${
+                      className={`px-3.5 py-1.5 transition-all flex items-center gap-1.5 font-medium border rounded-xs ${
                         isActive 
                           ? 'border-charcoal bg-charcoal text-ivory font-semibold shadow-xs' 
                           : 'border-transparent hover:border-border hover:bg-cream-light'
