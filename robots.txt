@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /admin.html
 
-Sitemap: https://vela.hoangthelong.io.vn/sitemap.xml
+Sitemap: https://velacandle.io.vn/sitemap.xml
